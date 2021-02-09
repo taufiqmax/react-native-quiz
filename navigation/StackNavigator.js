@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import ExamList from '../screens/ExamList';
 import ExamPracticeList from '../screens/ExamPracticeList';
 import ExamDetails from '../screens/ExamDetails';
+import PracticeDetails from '../screens/PracticeDetails';
 
 const Stack = createStackNavigator();
 
@@ -44,6 +45,11 @@ const PracticeStackNavigator = () => {
         name="Practicelist"
         component={ExamPracticeList}
         options={{ title: 'Practice List' }}
+      />
+      <Stack.Screen
+        name="PracticeDetails"
+        component={PracticeDetails}
+        options={({ route }) => ({ title: route.params.title })}
       />
     </Stack.Navigator>
   );

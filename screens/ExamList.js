@@ -28,7 +28,7 @@ const ExamList = ({ navigation }) => {
       <ScrollView>
         <List.Item
           title="Azure AZ-900"
-          description="Item description"
+          // description="Item description"
           left={(props) => <List.Icon {...props} icon="book-open-outline" />}
           right={(props) => <List.Icon {...props} icon="chevron-right" />}
           onPress={() =>
@@ -41,7 +41,7 @@ const ExamList = ({ navigation }) => {
         <Divider />
         <List.Item
           title="Azure AZ-104"
-          description="Item description"
+          // description="Item description"
           left={(props) => <List.Icon {...props} icon="book-open-outline" />}
           right={(props) => <List.Icon {...props} icon="chevron-right" />}
           onPress={() =>
