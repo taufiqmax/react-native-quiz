@@ -15,7 +15,7 @@ import {
 const ExamDetails = ({ route }) => {
   const { questions } = route.params;
   return (
-    <ScrollView>
+    <ScrollView style={styles.scrollview}>
       {/* //React Native Paper Appbar// */}
       {/* <Appbar.Header>
         <Appbar.Action
@@ -42,8 +42,8 @@ const ExamDetails = ({ route }) => {
             ))}
           </Card.Content>
 
-          <List.Accordion title="Reveal Solutions">
-            <List.Item title={l.correct} />
+          <List.Accordion title="Reveal Solutions" style={styles.reveal}>
+            <List.Item title={l.correct} style={styles.listitem} />
           </List.Accordion>
         </Card>
       ))}
@@ -59,5 +59,18 @@ const styles = StyleSheet.create({
   },
   card: {
     margin: 10,
+    flex: 1,
+    backgroundColor: '#d8d8d8',
+  },
+  scrollview: {
+    flex: 1,
+  },
+  reveal: {
+    backgroundColor: '#c9c9c9',
+    borderRadius: 5,
+  },
+  listitem: {
+    backgroundColor: '#c9c9c9',
+    borderRadius: 5,
   },
 });

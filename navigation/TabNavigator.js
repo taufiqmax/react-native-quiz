@@ -5,7 +5,7 @@ import { MainStackNavigator, PracticeStackNavigator } from './StackNavigator';
 
 const Tab = createMaterialBottomTabNavigator();
 
-const BottomTabNavigator = () => {
+const TabNavigator = () => {
   return (
     <Tab.Navigator initialRouteName="Exam" activeColor="#fff" shifting={true}>
       <Tab.Screen
@@ -42,4 +42,4 @@ const BottomTabNavigator = () => {
   );
 };
 
-export default BottomTabNavigator;
+export default TabNavigator;

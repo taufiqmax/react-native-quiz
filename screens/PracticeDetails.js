@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#000000',
-    fontSize: 25,
+    fontSize: 20,
     textAlign: 'center',
     letterSpacing: -0.02,
     fontWeight: '600',
